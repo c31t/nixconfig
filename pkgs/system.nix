@@ -29,5 +29,6 @@
     nixpkgs-review
     nix-update
     nix-du
+    bluez
   ];
 }
