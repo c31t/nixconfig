@@ -16,6 +16,7 @@
     wine
     wine64
     winetricks
+    freetype
   ];
 
   programs.steam = {
