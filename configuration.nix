@@ -1,10 +1,11 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
-
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -41,63 +42,63 @@
 
   environment.systemPackages = with pkgs; [
     wget
-	git
-	sof-firmware
-	pciutils
-	usbutils
+    git
+    sof-firmware
+    pciutils
+    usbutils
   ];
 
   environment.pathsToLink = [
-      "/bin"
-      "/lib"
-      "/lib64"
-      "/etx/xdg"
-      "/sbin"
-      "/share/applications"
-      "/share/emacs"
-      "/share/hunspell"
-      "/share/nano"
-      "/share/org"
-      "/share/themes"
-      "/share/vim-plugins"
-      "/share/vulkan"
-      "/share/kservices5"
-      "/share/kservicetypes5"
-      "/share/kxmlgui5"
-      "/share/systemd"
-      "/share/thumbnailers"
-      "/share/xdg-desktop-portal"
-      "/share/qemu"
-      "/sys"
-    ];
+    "/bin"
+    "/lib"
+    "/lib64"
+    "/etx/xdg"
+    "/sbin"
+    "/share/applications"
+    "/share/emacs"
+    "/share/hunspell"
+    "/share/nano"
+    "/share/org"
+    "/share/themes"
+    "/share/vim-plugins"
+    "/share/vulkan"
+    "/share/kservices5"
+    "/share/kservicetypes5"
+    "/share/kxmlgui5"
+    "/share/systemd"
+    "/share/thumbnailers"
+    "/share/xdg-desktop-portal"
+    "/share/qemu"
+    "/sys"
+  ];
 
-    # kdeconnect
-      networking.firewall = rec {
-        allowedTCPPortRanges = [
-          {
-            from = 1714;
-            to = 1764;
-          }
-        ];
-        allowedUDPPortRanges = allowedTCPPortRanges;
-      };
-      services.protonmail-bridge.enable = true;
-      boot.tmp.useTmpfs = true;
-      boot.tmp.cleanOnBoot = true;
-      boot.loader.systemd-boot.configurationLimit = 10;
-    
-      nix.gc = {
-        automatic = true;
-        dates = "weekly";
-        options = "--delete-older-than 5d";
-      };
-    
-      nix.settings.auto-optimise-store = true;
-    
-      security.polkit.enable = true;
+  # kdeconnect
+  networking.firewall = rec {
+    allowedTCPPortRanges = [
+      {
+        from = 1714;
+        to = 1764;
+      }
+    ];
+    allowedUDPPortRanges = allowedTCPPortRanges;
+  };
+  services.protonmail-bridge.enable = true;
+  boot.tmp.useTmpfs = true;
+  boot.tmp.cleanOnBoot = true;
+  boot.loader.systemd-boot.configurationLimit = 10;
+
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 5d";
+  };
+
+  nix.settings.auto-optimise-store = true;
+
+  security.polkit.enable = true;
 
   nix.settings.experimental-features = [
-      "nix-command"
-      "flakes"
+    "nix-command"
+    "flakes"
   ];
 }

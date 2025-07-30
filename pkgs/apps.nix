@@ -1,7 +1,7 @@
 {pkgs, ...}: {
-	programs.firefox.enable = true;
-	environment.systemPackages = with pkgs; [
-	    vlc
-	    libreoffice
-	];
+  programs.firefox.enable = true;
+  environment.systemPackages = with pkgs; [
+    vlc
+    libreoffice
+  ];
 }

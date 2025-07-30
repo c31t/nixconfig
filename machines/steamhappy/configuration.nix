@@ -1,23 +1,24 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
-
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   networking.hostName = "steamhappy"; # Define your hostname.
   # Set your time zone.
   time.timeZone = "Europe/Paris";
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
-  
+
   swapDevices = [
     {
       device = "/swap/swapfile";
       size = 16 * 1024;
     }
-  ];  
-  
+  ];
+
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "fr_FR.UTF-8";
     LC_IDENTIFICATION = "fr_FR.UTF-8";
@@ -37,16 +38,16 @@
   };
 
   hardware.graphics = {
-  	enable = true;
-  	enable32Bit = true;
+    enable = true;
+    enable32Bit = true;
   };
 
   services.xserver.videoDrivers = ["nvidia"];
   hardware.nvidia = {
-  	open = true;
-  	nvidiaSettings = true;
-  	videoAcceleration = true;
+    open = true;
+    nvidiaSettings = true;
+    videoAcceleration = true;
   };
-  
+
   system.stateVersion = "25.05"; # Did you read the comment?
 }

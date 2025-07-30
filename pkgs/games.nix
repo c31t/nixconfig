@@ -1,23 +1,22 @@
-{pkgs, ...}:
-{
-	environment.systemPackages = with pkgs; [
-		protonup-qt
-		wineWowPackages.staging
+{pkgs, ...}: {
+  environment.systemPackages = with pkgs; [
+    protonup-qt
+    wineWowPackages.staging
 
-		prismlauncher
+    prismlauncher
 
-		bottles
+    bottles
 
-		r2modman
+    r2modman
 
-		mangohud
-	];
+    mangohud
+  ];
 
-	programs.steam = {
-		enable = true;
-		remotePlay.openFirewall = true;
-		extraCompatPackages = with pkgs; [
-			proton-ge-bin
-		];
-	};
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    extraCompatPackages = with pkgs; [
+      proton-ge-bin
+    ];
+  };
 }

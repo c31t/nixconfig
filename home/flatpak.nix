@@ -1,9 +1,9 @@
 {...}: {
-	services.flatpak = {
-	    enable = true;
-	    update.auto.enable = true;
-	    uninstallUnmanaged = true;
+  services.flatpak = {
+    enable = true;
+    update.auto.enable = true;
+    uninstallUnmanaged = true;
 
-	    packages = []; # anything you want from flathub here
-	};
+    packages = []; # anything you want from flathub here
+  };
 }
