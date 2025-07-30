@@ -12,6 +12,10 @@
     mangohud
 
     protontricks
+
+    wine
+    wine64
+    winetricks
   ];
 
   programs.steam = {
