@@ -108,6 +108,8 @@
 	prismlauncher
 	zulu
 	git
+	vscode
+  mangohud
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -140,4 +142,19 @@
     "nix-command"
     "flakes"
   ];
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
+  services.xserver.videoDrivers = [ "nvidia" ];
+  hardware.nvidia = {
+    modesetting.enable = true;
+    open = false;
+    nvidiaSettings = true;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
+  };
+  programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
+  programs.gamemode.enable = true;
+
 }
