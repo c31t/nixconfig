@@ -44,9 +44,10 @@
 
   services.xserver.videoDrivers = ["nvidia"];
   hardware.nvidia = {
-    open = true;
+    open = false;
     nvidiaSettings = true;
     videoAcceleration = true;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
   system.stateVersion = "25.05"; # Did you read the comment?
