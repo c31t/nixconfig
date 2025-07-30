@@ -10,6 +10,8 @@
     r2modman
 
     mangohud
+
+    protontricks
   ];
 
   programs.steam = {
