@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     protonup-qt
-    wineWowPackages.staging
+    wineWowPackages.stagingFull
 
     prismlauncher
 
