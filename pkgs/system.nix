@@ -29,6 +29,5 @@
     nixpkgs-review
     nix-update
     nix-du
-    freetype
   ];
 }
