@@ -12,6 +12,7 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
   security.sudo.wheelNeedsPassword = false;
+  boot.loader.systemd-boot.enable = false;
   boot.loader = {
     efi = {
       canTouchEfiVariables = true;
@@ -24,7 +25,6 @@
       useOSProber = true;
     };
   };
-
   swapDevices = [
     {
       device = "/var/lib/swapfile";
