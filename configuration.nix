@@ -7,9 +7,19 @@
   ...
 }: {
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-
+  boot.loader.systemd-boot.enable = false;
+  boot.loader = {
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot";
+    };
+    grub = {
+      enable = true;
+      efiSupport = true;
+      device = "nodev";
+      useOSProber = true;
+    };
+  };
   networking.networkmanager.enable = true;
 
   # Set your time zone.
