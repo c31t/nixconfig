@@ -11,6 +11,7 @@
   time.timeZone = "Europe/Paris";
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  security.sudo.wheelNeedsPassword = false;
 
   swapDevices = [
     {
