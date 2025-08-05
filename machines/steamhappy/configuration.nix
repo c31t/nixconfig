@@ -26,6 +26,7 @@
 
       minegrub-world-sel = {
         enable = true;
+        customIcons = [];
       };
     };
   };
