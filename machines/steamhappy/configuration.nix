@@ -12,6 +12,18 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
   security.sudo.wheelNeedsPassword = false;
+  boot.loader = {
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot";
+    };
+    grub = {
+      enable = true;
+      efiSupport = true;
+      device = "nodev";
+      useOSProber = true;
+    };
+  };
 
   swapDevices = [
     {

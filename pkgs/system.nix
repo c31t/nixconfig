@@ -22,7 +22,7 @@
     nil
     nixfmt-rfc-style
     alejandra
-
+    os-prober
     patchelfUnstable
     file
     nix-prefetch-github
