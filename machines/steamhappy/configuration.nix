@@ -23,6 +23,10 @@
       efiSupport = true;
       device = "nodev";
       useOSProber = true;
+
+      minegrub-world-sel = {
+        enable = true;
+      };
     };
   };
   swapDevices = [

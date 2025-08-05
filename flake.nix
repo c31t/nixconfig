@@ -21,6 +21,9 @@
     nix-flatpak = {
       url = "github:gmodena/nix-flatpak";
     };
+    minegrub-theme = {
+      url = "github:Lxtharia/minegrub-world-sel-theme";
+    };
   };
 
   outputs = {
@@ -67,6 +70,7 @@
               ./home/celt.nix
             ];
           }
+          inputs.minegrub-theme.nixosModules.default
 
           ./configuration.nix
           ./pkgs
