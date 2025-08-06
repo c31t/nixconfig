@@ -5,5 +5,6 @@
     libreoffice
     dualsensectl
     rivalcfg
+    eyedropper
   ];
 }
