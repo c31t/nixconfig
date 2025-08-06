@@ -12,6 +12,7 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
   security.sudo.wheelNeedsPassword = false;
+
   boot.loader.systemd-boot.enable = false;
   boot.loader = {
     efi = {
@@ -30,6 +31,17 @@
       };
     };
   };
+
+  hardware.bluetooth = {
+  enable = true;
+  powerOnBoot = true;
+  settings = {
+    General = {
+      Experimental = true; # Show battery charge of Bluetooth devices
+      };
+    };
+  };
+
   swapDevices = [
     {
       device = "/var/lib/swapfile";
