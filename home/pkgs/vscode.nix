@@ -4,6 +4,8 @@
     profiles.default.extensions = with pkgs.vscode-extensions; [
       dracula-theme.theme-dracula
       yzhang.markdown-all-in-one
+      bbenoist.Nix
+      ms-python.python
     ];
   };
 }
