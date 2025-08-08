@@ -6,5 +6,6 @@
     dualsensectl
     rivalcfg
     eyedropper
+    obs-studio
   ];
 }
