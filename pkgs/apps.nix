@@ -9,5 +9,6 @@
     obs-studio
     lutris
     solaar
+    headsetcontrol
   ];
 }
