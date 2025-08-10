@@ -8,5 +8,6 @@
     eyedropper
     obs-studio
     lutris
+    solaar
   ];
 }
