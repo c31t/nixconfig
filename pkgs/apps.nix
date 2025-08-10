@@ -7,5 +7,6 @@
     rivalcfg
     eyedropper
     obs-studio
+    lutris
   ];
 }
