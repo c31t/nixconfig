@@ -30,5 +30,7 @@
     nix-update
     nix-du
     bluez
+    python314
+    python313Packages.pip
   ];
 }
