@@ -11,5 +11,6 @@
     solaar
     headsetcontrol
     unzip
+    vulkan-tools
   ];
 }
