@@ -13,5 +13,6 @@
     unzip
     vulkan-tools
     vulkan-loader
+    vdhcoapp
   ];
 }
