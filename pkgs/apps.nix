@@ -10,5 +10,6 @@
     lutris
     solaar
     headsetcontrol
+    unzip
   ];
 }
