@@ -3,5 +3,5 @@
 in {
   environment.systemPackages = with pkgs; [
     rainyhearts
-    ];
+  ];
 }

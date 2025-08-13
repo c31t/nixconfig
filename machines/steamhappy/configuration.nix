@@ -33,11 +33,11 @@
   };
 
   hardware.bluetooth = {
-  enable = true;
-  powerOnBoot = true;
-  settings = {
-    General = {
-      Experimental = true; # Show battery charge of Bluetooth devices
+    enable = true;
+    powerOnBoot = true;
+    settings = {
+      General = {
+        Experimental = true; # Show battery charge of Bluetooth devices
       };
     };
   };
@@ -81,7 +81,7 @@
   };
   services.mysql = {
     enable = true;
-    package = pkgs.mariadb;  
+    package = pkgs.mariadb;
     dataDir = "/var/lib/mariadb";
   };
 
