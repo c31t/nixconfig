@@ -79,6 +79,8 @@
     videoAcceleration = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
+  hardware.opengl.enable = true;
+  hardware.opengl.extraPackages = with pkgs; [vulkan-tools];
   services.mysql = {
     enable = true;
     package = pkgs.mariadb;
