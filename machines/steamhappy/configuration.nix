@@ -79,6 +79,11 @@
     videoAcceleration = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
+  services.mysql = {
+    enable = true;
+    package = pkgs.mariadb;  
+    dataDir = "/var/lib/mariadb";
+  };
 
   system.stateVersion = "25.05"; # Did you read the comment?
 }
