@@ -12,5 +12,6 @@
     headsetcontrol
     unzip
     vulkan-tools
+    vulkan-loader
   ];
 }
