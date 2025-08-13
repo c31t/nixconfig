@@ -17,8 +17,6 @@
     wine64
     winetricks
     freetype
-    lsfg-vk
-    lsfg-vk-ui
   ];
 
   programs.steam = {

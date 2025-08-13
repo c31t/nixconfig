@@ -25,6 +25,8 @@
     minegrub-theme = {
       url = "github:Lxtharia/minegrub-world-sel-theme";
     };
+    lsfg-vk-flake.url = "github:pabloaul/lsfg-vk-flake/main";
+    lsfg-vk-flake.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
@@ -34,6 +36,7 @@
     home-manager,
     plasma-manager,
     nix-flatpak,
+    lsfg-vk-flake,
     ...
   } @ inputs: let
     username = "celt";
@@ -72,6 +75,7 @@
             ];
           }
           inputs.minegrub-theme.nixosModules.default
+          lsfg-vk-flake.nixosModules.default
 
           ./configuration.nix
           ./pkgs

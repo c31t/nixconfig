@@ -84,6 +84,10 @@
     package = pkgs.mariadb;
     dataDir = "/var/lib/mariadb";
   };
+  services.lsfg-vk = {
+    enable = true;
+    ui.enable = true;
+  };
 
   system.stateVersion = "25.05"; # Did you read the comment?
 }
