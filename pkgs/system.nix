@@ -32,5 +32,7 @@
     bluez
     python314
     python313Packages.pip
+    zip
+    unzip
   ];
 }

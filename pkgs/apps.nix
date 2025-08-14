@@ -9,7 +9,6 @@
     obs-studio
     lutris
     headsetcontrol
-    unzip
     vulkan-tools
     vulkan-loader
     vdhcoapp
