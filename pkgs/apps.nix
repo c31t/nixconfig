@@ -8,11 +8,12 @@
     eyedropper
     obs-studio
     lutris
-    solaar
     headsetcontrol
     unzip
     vulkan-tools
     vulkan-loader
     vdhcoapp
+    spotify
+    spicetify-cli
   ];
 }
