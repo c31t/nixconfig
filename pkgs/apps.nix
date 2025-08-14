@@ -12,6 +12,5 @@
     vulkan-tools
     vulkan-loader
     vdhcoapp
-    spotify
   ];
 }
