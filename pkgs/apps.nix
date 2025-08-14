@@ -1,10 +1,4 @@
 {pkgs, ...}: {
-  nixpkgs.config.packageOverrides = pkgs: {
-    nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
-      inherit pkgs;
-    };
-  };
-
   programs.firefox.enable = true;
   environment.systemPackages = with pkgs; [
     vlc
@@ -20,7 +14,5 @@
     vulkan-loader
     vdhcoapp
     spotify
-    nur.repos.nltch.spotify-adblock
-    nur.repos.nltch.ciscoPacketTracer8
   ];
 }
