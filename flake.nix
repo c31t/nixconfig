@@ -28,7 +28,7 @@
 
     solaar = {
       url = "https://flakehub.com/f/Svenum/Solaar-Flake/*.tar.gz";
-      inputs.nixpkgs.follow = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     lsfg-vk-flake.url = "github:pabloaul/lsfg-vk-flake/main";
