@@ -35,6 +35,12 @@
     lsfg-vk-flake.inputs.nixpkgs.follows = "nixpkgs";
   };
 
+  nixpkgs.config.packageOverrides = pkgs: {
+    nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
+      inherit pkgs;
+    };
+  };
+
   outputs = {
     nixpkgs,
     nixpkgs-stable,
