@@ -14,7 +14,5 @@
     vulkan-loader
     vdhcoapp
     spotify
-    nur.repos.nltch.spotify-adblock
-    nur.repos.nltch.ciscoPacketTracer8
   ];
 }

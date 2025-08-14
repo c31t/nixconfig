@@ -53,11 +53,7 @@
       inherit system;
       config.allowUnfree = true;
     };
-    pkgs = let
-      base = import nixpkgs commonArgs;
-      nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {inherit base;};
-    in
-      base // {nur = nur;};
+    pkgs = import nixpkgs commonArgs;
     pkgs-stable = import nixpkgs-stable commonArgs;
   in {
     inherit lib commonArgs;
