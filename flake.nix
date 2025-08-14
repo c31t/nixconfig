@@ -64,7 +64,6 @@
         };
       };
     };
-    pkgs = import nixpkgs commonArgs;
     pkgs-stable = import nixpkgs-stable commonArgs;
   in {
     inherit lib commonArgs;
