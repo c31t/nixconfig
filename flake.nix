@@ -53,7 +53,7 @@
       inherit system;
       config.allowUnfree = true;
     };
-    pkgs = import nixpkgs {
+    pkgs = import nixpkgs commonArgs {
       inherit system;
       config.allowUnfree = true;
       nixpkgsConfig = {
