@@ -14,25 +14,6 @@
   security.sudo.wheelNeedsPassword = false;
 
   boot.loader.systemd-boot.enable = true;
-  /*
-    boot.loader = {
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot";
-    };
-    grub = {
-      enable = true;
-      efiSupport = true;
-      device = "nodev";
-      useOSProber = true;
-
-      minegrub-world-sel = {
-        enable = true;
-        customIcons = [];
-      };
-    };
-  };
-  */
 
   hardware.bluetooth = {
     enable = true;

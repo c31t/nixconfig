@@ -8,20 +8,7 @@
 }: {
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
-  /*
-    boot.loader = {
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot";
-    };
-    grub = {
-      enable = true;
-      efiSupport = true;
-      device = "nodev";
-      useOSProber = true;
-    };
-  };
-  */
+
   networking.networkmanager.enable = true;
 
   # Set your time zone.
@@ -47,10 +34,6 @@
     pulse.enable = true;
     jack.enable = true;
   };
-
-  # Enable automatic login for the user.
-  services.displayManager.autoLogin.enable = true;
-  services.displayManager.autoLogin.user = "celt";
 
   environment.systemPackages = with pkgs; [
     wget
