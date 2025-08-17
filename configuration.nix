@@ -8,7 +8,8 @@
 }: {
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
-  boot.loader = {
+  /*
+    boot.loader = {
     efi = {
       canTouchEfiVariables = true;
       efiSysMountPoint = "/boot";
@@ -20,6 +21,7 @@
       useOSProber = true;
     };
   };
+  */
   networking.networkmanager.enable = true;
 
   # Set your time zone.
