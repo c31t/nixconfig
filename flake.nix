@@ -25,14 +25,6 @@
     minegrub-theme = {
       url = "github:Lxtharia/minegrub-world-sel-theme";
     };
-
-    solaar = {
-      url = "https://flakehub.com/f/Svenum/Solaar-Flake/*.tar.gz";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    lsfg-vk-flake.url = "github:pabloaul/lsfg-vk-flake/main";
-    lsfg-vk-flake.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
@@ -42,8 +34,6 @@
     home-manager,
     plasma-manager,
     nix-flatpak,
-    lsfg-vk-flake,
-    solaar,
     ...
   } @ inputs: let
     username = "celt";
@@ -82,9 +72,6 @@
             ];
           }
           inputs.minegrub-theme.nixosModules.default
-          lsfg-vk-flake.nixosModules.default
-
-          solaar.nixosModules.default
 
           ./configuration.nix
           ./pkgs
