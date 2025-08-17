@@ -13,22 +13,22 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
   security.sudo.wheelNeedsPassword = false;
 
-  boot.loader.systemd-boot.enable = false;
-  boot.loader = {
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot";
-    };
-    grub = {
+  boot.loader.grub = {
+    minegrub-theme = {
       enable = true;
-      efiSupport = true;
-      device = "nodev";
-      useOSProber = true;
-
-      minegrub-world-sel = {
-        enable = true;
-        customIcons = [];
-      };
+      customIcons = [
+        {
+          name = "nixos";
+          lineTop = "NixOS (23/11/2023, 23:03)";
+          lineBottom = "Survival Mode, No Cheats, Version: 23.11";
+          # Icon: you can use an icon from the remote repo, or load from a local file
+          imgName = "nixos";
+          # customImg = builtins.path {
+          #   path = ./nixos-logo.png;
+          #   name = "nixos-img";
+          # };
+        }
+      ];
     };
   };
 
