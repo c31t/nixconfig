@@ -73,13 +73,7 @@
     extraPackages = with pkgs; [vulkan-tools];
   };
 
-  services.xserver.videoDrivers = ["nvidia"];
-  hardware.nvidia = {
-    open = false;
-    nvidiaSettings = true;
-    videoAcceleration = true;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
-  };
+  services.xserver.videoDrivers = ["intel"];
   services.mysql = {
     enable = true;
     package = pkgs.mariadb;
