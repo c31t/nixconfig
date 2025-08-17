@@ -9,5 +9,6 @@
     vulkan-loader
     vdhcoapp
     ani-cli
+    fastfetch
   ];
 }
