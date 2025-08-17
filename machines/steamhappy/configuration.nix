@@ -14,7 +14,7 @@
   security.sudo.wheelNeedsPassword = false;
 
   boot.loader.grub = {
-    minegrub-theme = {
+    minegrub-world-sel = {
       enable = true;
       customIcons = [
         {
