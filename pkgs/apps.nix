@@ -3,14 +3,11 @@
   environment.systemPackages = with pkgs; [
     vlc
     libreoffice
-    dualsensectl
-    rivalcfg
     eyedropper
     obs-studio
-    lutris
-    headsetcontrol
     vulkan-tools
     vulkan-loader
     vdhcoapp
+    ani-cli
   ];
 }
