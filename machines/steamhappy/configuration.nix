@@ -14,7 +14,8 @@
   security.sudo.wheelNeedsPassword = false;
 
   boot.loader.systemd-boot.enable = true;
-  boot.loader = {
+  /*
+    boot.loader = {
     efi = {
       canTouchEfiVariables = true;
       efiSysMountPoint = "/boot";
@@ -31,6 +32,7 @@
       };
     };
   };
+  */
 
   hardware.bluetooth = {
     enable = true;
