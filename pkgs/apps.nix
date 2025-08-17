@@ -10,5 +10,6 @@
     vdhcoapp
     ani-cli
     fastfetch
+    discord
   ];
 }
