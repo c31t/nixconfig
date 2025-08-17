@@ -79,17 +79,6 @@
     package = pkgs.mariadb;
     dataDir = "/var/lib/mariadb";
   };
-  services.lsfg-vk = {
-    enable = true;
-    ui.enable = true;
-  };
-  services.solaar = {
-    enable = true;
-    package = pkgs.solaar;
-    window = "hide";
-    batteryIcons = "regular";
-    extraArgs = "";
-  };
 
   system.stateVersion = "25.05"; # Did you read the comment?
 }
