@@ -34,5 +34,7 @@
     python313Packages.pip
     zip
     unzip
+    gcc
+    make
   ];
 }
