@@ -35,6 +35,6 @@
     zip
     unzip
     gcc
-    make
+    gnumake42
   ];
 }
