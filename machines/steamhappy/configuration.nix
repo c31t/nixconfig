@@ -50,7 +50,7 @@
     variant = "";
   };
 
-  boot.initdr.kernelModules = ["i9125"];
+  boot.initrd.kernelModules = ["i9125"];
   boot.kernelParams = ["i9125.modeset=1"];
 
   hardware.graphics = {
