@@ -50,13 +50,23 @@
     variant = "";
   };
 
+  boot.initdr.kernelModules = ["i9125"];
+  boot.kernelParams = ["i9125.modeset=1"];
+
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
-    extraPackages = with pkgs; [vulkan-tools];
+    extraPackages = with pkgs; [
+      vulkan-tools
+      intel-media-driver
+      vaapiIntel
+      libvdpau-va-gl
+      mesa
+    ];
   };
 
-  services.xserver.videoDrivers = ["intel"];
+  services.xserver.videoDrivers = ["modesetting"];
+
   services.mysql = {
     enable = true;
     package = pkgs.mariadb;

@@ -2,17 +2,7 @@
   environment.systemPackages = with pkgs; [
     protonup-qt
     wineWowPackages.stagingFull
-
-    prismlauncher
-
-    bottles
-
-    r2modman
-
-    mangohud
-
     protontricks
-
     wine
     wine64
     winetricks
