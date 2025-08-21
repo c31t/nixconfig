@@ -36,5 +36,6 @@
     unzip
     gcc
     gnumake42
+    kitty
   ];
 }
