@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+y#!/usr/bin/env bash
 set -e
 cd ~/nixconfig
 WHERE=$(cat /etc/hostname)

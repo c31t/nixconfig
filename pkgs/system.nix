@@ -36,6 +36,7 @@
     unzip
     gcc
     gnumake42
-    kitty
+    zsh
+    oh-my-zsh
   ];
 }

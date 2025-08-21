@@ -6,7 +6,7 @@
   pkgs,
   ...
 }: {
-  networking.hostName = "superduperincrediblelaptop"; # Define your hostname.
+  networking.hostName = "steamhappy"; # Define your hostname.
   # Set your time zone.
   time.timeZone = "Europe/Paris";
 
