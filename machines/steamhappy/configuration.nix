@@ -25,6 +25,9 @@
     };
   };
 
+  programs.zsh.enable = true;
+  environment.shells = with pkgs; [zsh];
+
   swapDevices = [
     {
       device = "/var/lib/swapfile";
