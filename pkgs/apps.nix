@@ -11,5 +11,6 @@
     ani-cli
     fastfetch
     discord
+    davinci-resolve
   ];
 }
