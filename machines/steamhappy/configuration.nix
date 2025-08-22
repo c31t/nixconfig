@@ -76,7 +76,5 @@
     dataDir = "/var/lib/mariadb";
   };
 
-  programs.hyprland.enable = true;
-
   system.stateVersion = "25.05"; # Did you read the comment?
 }
