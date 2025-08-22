@@ -38,6 +38,6 @@
     gnumake42
     zsh
     oh-my-zsh
-    wofi
+    rofi
   ];
 }
