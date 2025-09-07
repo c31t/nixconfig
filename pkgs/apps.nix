@@ -12,6 +12,5 @@
     fastfetch
     discord
     davinci-resolve
-    zoom-us
   ];
 }
