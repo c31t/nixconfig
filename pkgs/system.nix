@@ -38,5 +38,6 @@
     gnumake42
     zsh
     oh-my-zsh
+    epson-escpr
   ];
 }
