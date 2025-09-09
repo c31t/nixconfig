@@ -12,5 +12,6 @@
     fastfetch
     discord
     davinci-resolve
+    epsonscan2
   ];
 }
