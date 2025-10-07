@@ -8,6 +8,7 @@
     winetricks
     freetype
     runelite
+    lutris
   ];
 
   programs.steam = {
