@@ -7,6 +7,7 @@
     wine64
     winetricks
     freetype
+    runelite
   ];
 
   programs.steam = {
