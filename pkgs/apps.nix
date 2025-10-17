@@ -13,5 +13,6 @@
     discord
     davinci-resolve
     epsonscan2
+    stremio
   ];
 }
