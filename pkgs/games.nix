@@ -9,6 +9,7 @@
     freetype
     runelite
     lutris
+    vulkan-tools
   ];
 
   programs.steam = {
