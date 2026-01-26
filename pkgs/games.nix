@@ -11,6 +11,7 @@
     lutris
     vulkan-tools
     heroic-unwrapped
+    protonplus
   ];
 
   programs.steam = {
