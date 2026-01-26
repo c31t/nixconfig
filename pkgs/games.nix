@@ -10,6 +10,7 @@
     runelite
     lutris
     vulkan-tools
+    heroic-unwrapped
   ];
 
   programs.steam = {
