@@ -10,7 +10,6 @@
     runelite
     lutris
     vulkan-tools
-    heroic-unwrapped
     protonplus
   ];
 
