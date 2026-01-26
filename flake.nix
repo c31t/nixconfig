@@ -27,7 +27,6 @@
     };
     dw-proton = {
       url = "github:imaviso/dwproton-flake";
-      inputs.dwproton.follows = "dwproton";
     };
   };
 
