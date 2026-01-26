@@ -26,7 +26,7 @@
       url = "github:Lxtharia/minegrub-world-sel-theme";
     };
     dw-proton = {
-      url = "github:imaviso/dwproton-flake";
+      url = "github:Momoyaan/dwproton-flake";
     };
   };
 
