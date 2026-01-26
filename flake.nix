@@ -54,7 +54,9 @@
     nixosConfigurations = {
       steamhappy = lib.nixosSystem {
         inherit system pkgs;
-        specialArgs = {};
+        specialArgs = {
+          inherit inputs;
+        };
 
         modules = [
           nixos-hardware.nixosModules.common-cpu-intel
