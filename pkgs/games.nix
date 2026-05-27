@@ -15,6 +15,7 @@
     lutris
     vulkan-tools
     protonplus
+    ryubing
   ];
 
   programs.steam = {
