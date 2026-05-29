@@ -39,6 +39,5 @@
     zsh
     oh-my-zsh
     epson-escpr
-    calc
   ];
 }
